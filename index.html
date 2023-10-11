@@ -33,39 +33,54 @@
 
         </header>
         
-        <form action="#" method="post" autocomplete="on">
+        <form class="form-group" action="#" method="post" autocomplete="on">
 
             <div class="form-icon">
 
-                <img src="" alt="">horário
+                <img src="../projeto-smartfit/imagens/icon-hour.png" alt="ICONE RELÓGIO"> Horário
 
             </div>
 
             <h3>Qual horário você quer Treinar?</h3>
 
-            <div>
+            <div class="radio">
                 
-                <label for="imanha" name="manha"></label>
-                <input type="radio" name="manha" id="imanha">
+                <input type="radio" name="horario" id="imanha">
+                <label for="imanha"> Manhã</label>
                 <span>06:00 ás 12h</span>
 
             </div>
 
-            <div>
+            <div class="radio">
 
-                <label for="itarde"></label>
-                <input type="radio" name="tarde" id="itarde">
+                <input type="radio" name="horario" id="itarde">
+                <label for="itarde"> Tarde</label>
                 <span>12:01 ás 18h</span>
 
             </div>
 
-            <div>
+            <div class="radio">
 
-                <label for="inoite"></label>
-                <input type="radio" name="noite" id="inoite">
+                <input type="radio" name="horario" id="inoite">
+                <label for="inoite">Noite</label>
                 <span>18:01 ás 23h</span>
 
             </div>
+
+            <div>
+
+                <input type="checkbox" name="check" id="icheck">
+                <label for="icheck">Exibir unidades fechadas</label>
+                
+            </div>
+
+            <div class="botoes">
+
+                <input class="btn primary" type="submit" value="Encontrar Unidades">
+                <input class="btn secundary" type="reset" value="Limpar">
+                
+            </div>
+            
         </form>
 </body>
 </html>
